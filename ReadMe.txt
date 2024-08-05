@@ -18,8 +18,7 @@ Using the Mavo framework @ https://mavo.io/
 Check out my youtube channel:
 https://www.youtube.com/channel/UCjoJJnvfTQ2AM5qbEDEqY6A
 
-For suggestion or to report bugs message me on discord:
-justcats12#9821
+For suggestion or to report bugs use my comment sections on the video i made on this.
 
 Please copy paste the following line of text to credit me where due if you plan to use this for a video (this is optional):
 Using Discord Simulator by @Daylightgaming69
