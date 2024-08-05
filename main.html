@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Discord -- Simulator 1.3</title>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="https://get.mavo.io/stable/mavo.min.js"></script>
+		<link rel="stylesheet" href="https://get.mavo.io/stable/mavo.min.css">
+    </head>
+    <body mv-app="discord" mv-storage="local" mv-permissions="read save edit add delete">
+        <ul>
+        <li mv-multiple class="post">
+            <img style="vertical-align:top" src="./img/[name].png" aria-hidden="true" class="pfp" alt=" " width="40" height="40">
+            <span class="cont" ><strong class="nexttoimg" property="name" style="color: [ if(color = 0, white, if(color=1, yellow, if(color=2, red, if(color=3, cyan, if(color=4, '#00ff00', '#ff0099')))))];">name</strong>   
+                <img class="[if(!contains(setting, 'bot'), hide)]" src="bottag.png" height="12px">
+                <span class="nexttoimg ts" property="timestamp">Today at [time($now, minutes)]</span>
+            
+            <span class="setting" property="setting">setting</span>
+            <input class="setting" type="range" min="0" max="5" property="color" />
+            <!--<button class="setting" mv-action="set(timestamp, time($now)">Timenow</button>!-->
+            
+            <br>
+            <span class="message" property="message">text</span>
+
+            <!--Image-->
+            <br class="[if(!contains(setting, 'png'), if(!contains(setting, 'jpg'), hide))]"/>
+            <img class="message underimg [if(!contains(setting, 'png'), if(!contains(setting, 'jpg'), hide))]" src="./img/[setting]" width="500" height="100%">
+            <!--Files-->
+            <!--Image-->
+            <span class="message underimg [if(!contains(setting, 'file'), if(!contains(setting, 'upload'), hide))]">
+                <br>
+                <div class="filediv underimg">
+                    <img src="file.svg" height="40" width="30" class="floatleft">
+                    <div style="margin-left: 2.3em ;">
+                    <span property="filename" class="link"></span><br>
+                    <span property="size" class="filesize"></span>
+                    </div>
+                </div>
+            </span>
+
+            <!--More lines-->
+            <ul>
+            <li mv-multiple property="line">
+            <!--<br class="[if(!contains(setting, '2nd'), hide)]"/>-->
+            <span class="message underimg" property="more-text"></span>
+            </li></ul>
+        </span>
+            
+        </li>
+        </ul>
+        <br>
+        <!--copied off discord-->
+        <div class="typing">
+            <svg width="24.5" height="7"> 
+                    <circle class="sizechange1" cx="3.5" cy="3.5" r="3.5" fill="currentColor" style="opacity: 1;"></circle>
+                    <circle class="sizechange2" cx="12.25" cy="3.5" r="3.5" fill="currentColor" style="opacity: 1;"></circle>
+                    <circle class="sizechange3" cx="21" cy="3.5" r="3.5" fill="currentColor" style="opacity: 1;"></circle>
+            
+                    <p class="spancorrection typetext">
+            <strong property="typer" class="typer">justcats12</strong> is typing...</p>
+            </svg></div>  
+            
+    </body>
+</html>

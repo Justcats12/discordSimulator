@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<title>Discord -- Simulator 1.1 CALL</title>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="https://get.mavo.io/stable/mavo.min.js"></script>
+		<link rel="stylesheet" href="https://get.mavo.io/stable/mavo.min.css">
+    </head>
+    <body mv-app="discord" mv-storage="local" mv-mode="edit">
+        <p property="callsetting1"></p><p property="callsetting2"></p>
+        <input property="speaking1" type="range" max="1" min="0">
+        <input property="speaking2" type="range" max="1" min="0">
+        <div class="darker">
+            <div class="paired">
+            <img src="./img/[callsetting1].png" class="[if(speaking1 = 1, caller1, caller0)]" width="120" height="120">
+            <img src="./img/[callsetting2].png" class="[if(speaking2 = 1, caller1, caller0)]" width="120" height="120">
+            </div>
+
+            <div class="paired">
+            <img src="callsymbols.png" class="caller" height="80" width="388" style="margin-bottom: 1em;">
+            </div>
+        </div>
+    </body>
+</html>
