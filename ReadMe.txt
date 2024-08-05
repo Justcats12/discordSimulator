@@ -26,8 +26,6 @@ Using Discord Simulator by @Daylightgaming69
 
 Please don't share the software to random people.
 
-GOOGLE DRIVE LINK (latest verion will be updated here):
-https://drive.google.com/drive/folders/10ksfehB1zQ10HtqZKvMurEloWOTMKLdQ?usp=share_link
 make sure to replace every file and download all new files. (if you have no /img/ folder make a new folder and call it "img")
 
 INSTRUCTIONS:
